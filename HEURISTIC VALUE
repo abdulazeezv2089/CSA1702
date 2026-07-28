@@ -1,0 +1,16 @@
+# Heuristic values (estimated distance to goal)
+
+heuristic = {
+    'A': 10,
+    'B': 6,
+    'C': 3,
+    'Goal': 0
+}
+
+print("Heuristic Values:")
+for node in heuristic:
+    print(node, ":", heuristic[node])
+
+best = min(heuristic, key=heuristic.get)
+
+print("\nBest Node to Visit:", best)
